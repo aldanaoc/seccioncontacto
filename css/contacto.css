@@ -1,0 +1,31 @@
+/* SECCIÓN CONTACTO */
+.titulo {
+  text-align: center;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.contenedor .card {
+  width: 350px;
+  padding: 20px;
+}
+
+/* Imágenes y Mapas con dimensiones originales */
+.img_map {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.info {
+  text-align: center;
+  padding: 40px;
+}
