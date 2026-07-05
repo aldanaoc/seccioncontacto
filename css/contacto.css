@@ -41,3 +41,9 @@ iframe {
   text-align: center;
   padding: 40px;
 }
+
+/*FORMULARIO DE CONTACTO*/
+.container_formulario{
+  display: flex;
+  justify-content: center;   
+}
