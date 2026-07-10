@@ -239,80 +239,82 @@
       </section>
     <!--ARRANCA LA SECCIÓN DEL FORMULARIO-->
     <section class="form">
-      <div class="contacto">
-        <h2>Información de contacto</h2>
-        <br> <br>
-        <div class="infocontacto">
-          <p><strong>📍  Dirección:</strong> Suarez 451, Temperley, Buenos Aires</p>
-          <br>
-          <p><strong>📧  E-mail:</strong> contacto@cfp403.edu.ar</p>
-          <br>
-          <p><strong>☎️  Teléfono:</strong> (011) 1234-5678</p>
-        </div>
-        <br> 
-        <div class="redes">
-          <a href="https://www.instagram.com/cfl403luzyfuerza?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Facebook CFP 403"><img src="../assets/images/ig.png" alt=""></a>
-          <a href="https://www.facebook.com/people/Cfl403temperley/61575275501333/?ref=NONE_xav_ig_profile_page_web#" aria-label="Instagram CFP 403"><img src="../assets/images/facebook.png" alt=""></a>
-          <a href="#" aria-label="WhatsApp CFP 403"><img src="../assets/images/whatsapp.png" alt=""></a>
-          <a href="https://www.tiktok.com/@cfl403.luzyfuerza?_t=8qCF3SEZGsf&_r=1"><img src="../assets/images/tiktok.png" alt=""></a>
-        </div>
-      </div>
-
-      <!-- FORMULARIO FORMULARIO FORMULARIO -->
-      <div class="container_formulario">
-        <form id="formulario">
-        <!-- Apellido y nombre -->
-          <label for="apellido">Apellidos y</label>
-          <span class="error" id="apellido-error"></span>
-          <label for="nombre">nombres * </label>
-          <span class="error" id="nombre-error"></span>
-          <br>
-          <input type="text" id="apellido" placeholder="Apellido/s" required>
+      <div class="contactoyform">
+        <div class="contacto">
+          <h2>Información de contacto</h2>
           <br> <br>
-          <input type="text" id="nombre" placeholder="Nombre/s" required>
-          <br>
-          <br>
-          <!-- Teléfono -->
-          <label for="telefono">Teléfono</label>
+         <div class="infocontacto">
+           <p><strong>📍  Dirección:</strong> Suarez 451, Temperley, Buenos Aires</p>
+            <br>
+           <p><strong>📧  E-mail:</strong> contacto@cfp403.edu.ar</p>
+           <br>
+            <p><strong>☎️  Teléfono:</strong> (011) 1234-5678</p>
+         </div>
           <br> 
-          <!--Telefono y usando tel para el mismo-->
-          <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678">
-          <span class="error" id="telefono-error"></span>
+         <div class="redes">
+           <a href="https://www.instagram.com/cfl403luzyfuerza?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Facebook CFP 403"><img src="../assets/images/ig.png" alt=""></a>
+            <a href="https://www.facebook.com/people/Cfl403temperley/61575275501333/?ref=NONE_xav_ig_profile_page_web#" aria-label="Instagram CFP 403"><img src="../assets/images/facebook.png" alt=""></a>
+           <a href="#" aria-label="WhatsApp CFP 403"><img src="../assets/images/whatsapp.png" alt=""></a>
+           <a href="https://www.tiktok.com/@cfl403.luzyfuerza?_t=8qCF3SEZGsf&_r=1"><img src="../assets/images/tiktok.png" alt=""></a>
+          </div>
+        </div>
+
+        <!-- FORMULARIO FORMULARIO FORMULARIO -->
+        <div class="container_formulario">
+         <form id="formulario">
+          <!-- Apellido y nombre -->
+           <label for="apellido">Apellidos y</label>
+           <span class="error" id="apellido-error"></span>
+            <label for="nombre">nombres * </label>
+            <span class="error" id="nombre-error"></span>
+            <br>
+            <input type="text" id="apellido" placeholder="Apellido/s" required>
+           <br> <br>
+           <input type="text" id="nombre" placeholder="Nombre/s" required>
+           <br>
+           <br>
+            <!-- Teléfono -->
+           <label for="telefono">Teléfono</label>
+           <br> 
+           <!--Telefono y usando tel para el mismo-->
+           <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678">
+            <span class="error" id="telefono-error"></span>
           
-          <br> <br>
-          <!-- E mail -->
-          <label for="email">E-mail *</label>
-          <br> 
-          <input type="email" id="email" placeholder="Ingrese su correo electronico" required>
-          <span class="error" id="email-error"></span>
-          <br> <br>
+            <br> <br>
+            <!-- E mail -->
+            <label for="email">E-mail *</label>
+            <br> 
+            <input type="email" id="email" placeholder="Ingrese su correo electronico" required>
+            <span class="error" id="email-error"></span>
+            <br> <br>
 
-          <!--ASUNTO MENSAJE-->
-          <label for="asunto">Asunto *</label>
-          <br> 
-          <select name="asunto" id="asunto" class="opciones">
-            <option value="" disabled selected hidden>Selecciona un motivo de consulta</option>
-            <option value="opcion1">opcion1</option>
-            <option value="opcion2">opción2</option>
-            <option value="opcion3">opción3</option>
-            <option value="opcion4">opción4</option>
-          </select>
-          <span class="error" id="asunto-error"></span> <!--a todo le ponía error no-->
+            <!--ASUNTO MENSAJE-->
+            <label for="asunto">Asunto *</label>
+            <br> 
+            <select name="asunto" id="asunto" class="opciones">
+              <option value="" disabled selected hidden>Selecciona un motivo de consulta</option>
+              <option value="opcion1">opcion1</option>
+              <option value="opcion2">opción2</option>
+              <option value="opcion3">opción3</option>
+              <option value="opcion4">opción4</option>
+            </select>
+           <span class="error" id="asunto-error"></span> <!--a todo le ponía error no-->
 
-          <!-- MENMSAJE MENSAJE MENSAJE-->
-          <br><br>
-          <label for="mensaje">Mensaje *</label>
-          <br>
-          <textarea id="mensaje" name="mensaje" rows="6" cols="40" placeholder="Escriba acá su consulta..."></textarea>
-          <span class="error" id="mensaje-error"></span>
-          <br>
-          <br>
-          <button type="submit">Enviar</button>
+            <!-- MENMSAJE MENSAJE MENSAJE-->
+            <br><br>
+            <label for="mensaje">Mensaje *</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="40" placeholder="Escriba acá su consulta..."></textarea>
+            <span class="error" id="mensaje-error"></span>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
 
 
 
-        </form>
+          </form>
 
+        </div>
       </div>
     </section>
     <!--SRCIPT ACÁ ACÁ ACÁ-->
