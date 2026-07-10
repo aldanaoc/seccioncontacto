@@ -18,8 +18,12 @@ const validadores = { // teléfono opcional. se puede modificar
     },
  
     email: (valor) => {
-        if (!valor.trim()) return "Ingrese su email, por favor";
-        if (!emailRegex.test(valor.trim())) return "E-mail inválido";
+        if (!valor.trim())
+            return "Ingrese su email, por favor";
+        if (!valor.includes("@")) {
+            return "El e-mail debe contener un @."; }
+        if (!emailRegex.test(valor.trim()))
+            return "E-mail inválido";
         return "";
     },
  
