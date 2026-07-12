@@ -227,25 +227,25 @@ textarea{
    ESTILOS PARA EL BOTÓN ENVIAR
    ========================================= */
 
-.btn-enviar {
+button[type="submit"] {
   /* Tamaño y Espaciado */
   display: block;               /* Asegura que se comporte como bloque */
   width: 100%;                  /* Ocupa todo el ancho disponible del formulario */
-  min-height: 48px;             /* Altura cómoda para dar click (buena usabilidad) */
-  padding: 12px 24px;           /* Espaciado interno */
-  margin-top: 20px;             /* Lo separa del textarea de arriba */
-  box-sizing: border-box;       /* Evita que el padding rompa el ancho del formulario */
+  min-height: 48px;             /* Altura cómoda para dar click */
+  padding: 12px 24px;           /* Espacio interno para que se vea grande */
+  margin-top: 20px;             /* Lo separa del campo anterior (textarea) */
+  box-sizing: border-box;       /* Evita que el padding rompa el ancho */
 
   /* Tipografía */
   font-family: sans-serif;      /* Misma fuente que tus enlaces del footer */
   font-size: 16px;              /* Texto claro y legible */
   font-weight: 700;             /* Texto en negrita */
-  color: #0A3D62;               /* Azul oscuro (color principal de tu formulario) */
+  color: #0A3D62;               /* Azul oscuro (combina con tu paleta) */
   text-align: center;
 
   /* Estética del Botón */
-  background-color: #ffffff;    /* Fondo blanco impecable para contrastar con tu azul */
-  border: none;                 /* Elimina por completo el borde gris de fábrica */
+  background-color: #ffffff;    /* Fondo blanco impecable para resaltar en el degradado azul */
+  border: none;                 /* Elimina por completo el borde gris feo de fábrica */
   border-radius: 10px;          /* Misma curvatura exacta de tus inputs */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para darle relieve */
   
@@ -255,14 +255,14 @@ textarea{
 }
 
 /* Efecto al pasar el cursor por encima */
-.btn-enviar:hover {
+button[type="submit"]:hover {
   background-color: #f1f5f9;    /* Se vuelve un tono grisáceo muy sutil */
-  transform: scale(0.98);       /* Efecto de hundimiento (igual que tus redes) */
+  transform: scale(0.98);       /* Efecto de hundimiento (como tus redes) */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduce la sombra al hundirse */
 }
 
 /* Efecto cuando mantienen presionado el click */
-.btn-enviar:active {
+button[type="submit"]:active {
   transform: scale(0.95);       /* Se hunde un poco más al hacer click real */
 }
 
