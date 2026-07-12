@@ -21,7 +21,7 @@ const sedes=[
     longitud: -58.619208000115584
     },
     {
-    nombre: "CFP La plata",
+    nombre: "CFP La Plata",
     latitud: -34.89233683791563,
     longitud: -57.96973767355588
     },
@@ -31,7 +31,7 @@ const sedes=[
     longitud: -58.575417602336415
     },
     {
-    nombre: "CFP San Martín",
+    nombre: "CFP San Martin",
     latitud: -34.571348853130154,
     longitud: -58.5379340984812
     },
