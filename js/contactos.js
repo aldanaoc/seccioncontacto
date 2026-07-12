@@ -1,3 +1,11 @@
+// js mapas
+var map = L.map('map').setView([51.505, -0.09], 13);
+// aññadir un marcador (?
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
+
+
+
 // arrancamos con lo del formulario
 const formulario = document.getElementById("formulario");
 const formMessage = document.getElementById("form-message"); // mensaje del form

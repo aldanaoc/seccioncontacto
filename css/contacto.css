@@ -43,6 +43,14 @@ body {
   color: #0A3D62;
   scale: 1.1;
 }
+/*CSS del MAPA MAPA MAPA */
+#sedes {
+  height: 600px;
+  max-height: 800px;
+}
+.mapa{
+  height: 400px;
+}
 
 .contenedor .card {
   width: 350px;
