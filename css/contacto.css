@@ -23,9 +23,9 @@ html{
 }
 .titulo button{
   background: #0A3D62;
-  background: linear-gradient(180deg,rgba(10, 61, 98, 1) 2%,
-  rgba(10, 61, 98, 0.99) 11%, rgba(20, 77, 131, 0.99) 41%,
-  rgba(54, 135, 249, 0.81) 100%);
+  background: linear-gradient(180deg,#C98B53 2%,
+  #C98B53 41%, #C98A4A  11%,
+  #D8A56A 100%);
   color: #f5f7fa;
   border: none;
   border-radius: 50px;
@@ -64,35 +64,94 @@ iframe {
 
 /*VERDADERA SECCIÓN DE CONTACTO*/
 .form{
-  width: 100%;
-  min-height: 100vh;
-  padding: 60px 0px;
-  gap: 100px;
-}
-.contactoyform{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  gap: 64px;
-}
-/* redes sociales del centro */
-.form .redes{
-  margin-left: 8%;
-}
-.redes a{
-  background-color: #f5f7fa;
-}
-.redes a:hover{
-  background-color: #f5f7fa;
-  scale: 1.1;
-}
-.redes img{
-  width: 40px;
-  height: 40px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    background-color: #ffffff; 
+    padding: 60px 20px; 
+    box-sizing: border-box;
 }
 
+.form .contacto {
+    background-color: #ebe9e9; 
+    border: 1px solid #e2e8f0;  
+    border-radius: 20px;        
+    padding: 35px;              
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
+    max-width: 400px;
+    height: fit-content;
+}
+
+.form .contacto h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0a3d62; 
+}
+
+.form .contacto p {
+    margin: 12px 0;
+    line-height: 1.5;
+    color: #334155;
+}
+
+.form .redes{
+    margin-left: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px; 
+    width: 100%;
+}
+
+.redes a{
+    background-color: #0a3d62; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; 
+    width: 45px;   
+    height: 45px;
+    transition: all 0.2s ease;
+}
+
+.redes a:hover{
+    background-color: #1e3a8a; 
+    transform: scale(1.1); 
+}
+
+.redes img{
+    width: 24px; 
+    height: 24px;
+    object-fit: contain;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.redes-footer a {
+    background-color: #0a3d62;
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 8px 16px; 
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.redes-footer a:hover {
+    background-color: #1e3a8a;
+    transform: scale(0.94);
+}
 
 /* FORMULARIO FORMULARIO formulario  */
 .container_formulario{
@@ -141,7 +200,7 @@ iframe {
 }
 
 .asunto-otro{
-  display: none; /*por ahora*/
+  display: none; 
   width: 100%;
   padding: 16px;
   border-radius: 10px;
@@ -166,4 +225,45 @@ textarea{
   font-size: 0.85rem;
   margin-top: 4px;
   min-height: 1em;
+}
+/*ESTILOS PARA EL BOTÓN ENVIAR */
+button[type="submit"] {
+  display: block;               
+  width: 100%;                  
+  min-height: 48px;             
+  padding: 12px 24px;          
+  margin-top: 20px;             
+  box-sizing: border-box;     
+  font-family: sans-serif;     
+  font-size: 16px;              
+  color: #0A3D62;               
+  text-align: center;
+  background-color: #ffffff;    
+  border: none;                 
+  border-radius: 10px;          
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* Interactividad y Animación */
+  cursor: pointer;             
+  transition: all 0.2s ease-in-out; 
+}
+/* Efecto al pasar el cursor por encima */
+button[type="submit"]:hover {
+  background-color: #f1f5f9;    
+  transform: scale(0.98);     
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+button[type="submit"]:active {
+  transform: scale(0.95);       
+}
+body {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerDeslizando 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes aparecerDeslizando {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
