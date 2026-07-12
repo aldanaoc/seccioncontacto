@@ -1,7 +1,7 @@
 // js mapas
 // vista previa del mapa
 const mapa = L.map('mapa').setView(
-    [-34.84961241149393, -58.49712021815266], 11); // esto es el zoom
+    [-34.84961241149393, -58.49712021815266], 10); // esto es el zoom
 // mapa que usa leafleat
 L.tileLayer(
     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -11,7 +11,7 @@ L.tileLayer(
 // const marker = L.marker([51.5, -0.09]).addTo(mapa);
 const sedes=[
     {
-    nombre: "Temperley",
+    nombre: "Sede Temperley",
     latitud: -34.77570204343717,
     longitud: -58.40198213327116
     },
@@ -36,7 +36,11 @@ const sedes=[
     longitud: -58.5379340984812
     },
 ]
-
+sedes.forEach((sede)=>{
+    L.marker(
+        [sede.latitud,sede.longitud]
+    ).addTo(mapa);
+});
 
 
 

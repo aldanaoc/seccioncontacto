@@ -47,6 +47,7 @@ body {
 /*CSS del MAPA MAPA MAPA */
 #sedes {
   height: 600px;
+  margin: 40px;
   max-height: 800px;
 }
 #mapa{
