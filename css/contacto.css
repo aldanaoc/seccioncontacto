@@ -223,7 +223,26 @@ textarea{
   margin-top: 4px;
   min-height: 1em;
 }
+.btn-enviar {
+  width: 100%;                  /* Ocupa todo el ancho del formulario */
+  padding: 12px 24px;           /* Espacio interno para hacerlo grande */
+  font-size: 16px;              /* Texto claro y legible */
+  font-weight: bold;            /* Texto en negrita */
+  color: #0A3D62;               /* Texto azul oscuro de tu paleta */
+  background-color: #ffffff;    /* Fondo blanco para que resalte en el degradado azul */
+  border: none;                 /* Elimina el borde gris feo de fábrica */
+  border-radius: 10px;          /* Misma curvatura de tus inputs */
+  cursor: pointer;              /* Cambia el cursor a la mano de click */
+  margin-top: 15px;             /* Separa el botón del textarea anterior */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar volumen */
+  transition: all 0.2s ease-in-out; /* Transición suave para el efecto hover */
+}
 
+.btn-enviar:hover {
+  background-color: #f8fafc;    /* Blanco ligeramente grisáceo al pasar el mouse */
+  transform: scale(0.98);       /* Efecto de hundimiento al presionarlo (como tus redes) */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 body {
     opacity: 0;
     transform: translateY(20px);
