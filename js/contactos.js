@@ -36,15 +36,32 @@ const sedes=[
     longitud: -58.5379340984812
     },
 ]
+
+const marcadores = {};
+// para cada sede unmarcador
 sedes.forEach((sede)=>{
-    L.marker(
+    const marcador = L.marker(
         [sede.latitud,sede.longitud]
     ).addTo(mapa).bindPopup(sede.nombre);
+    marcadores[sede.nombre] = marcador;
+});
+const tarjetas = document.querySelectorAll(".card-sede");
+tarjetas.forEach((tarjeta) => {
+
+tarjeta.addEventListener("click", () => {
+    const nombreSede = tarjeta.dataset.sede;
+    const sede = sedes.find(s => s.nombre === nombreSede);
+    if (sede) {
+        mapa.flyTo([
+            sede.latitud, sede.longitud], 16
+        );
+        marcadores[sede.nombre].openPopup(); // cuando toca una card pasa esto
+    }
 });
 
+});
 
-
-// Slider by marcos
+// calesita 
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector(".slider-track");
     const prevBtn = document.querySelector(".prev-btn");
@@ -66,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const maxIndex = totalAmountOfCards - visibleCards;
 
         if (direction === "next") {
-            index = index >= maxIndex ? 0 : index + 1; // Si llega al final, vuelve al inicio
+            index = index >= maxIndex ? 0 : index + 1; 
         } else {
             index = index <= 0 ? Math.max(0, maxIndex) : index - 1; // Si va hacia atrás en el inicio, va al final
         }
