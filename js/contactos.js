@@ -45,6 +45,8 @@ sedes.forEach((sede)=>{
     ).addTo(mapa).bindPopup(sede.nombre);
     marcadores[sede.nombre] = marcador;
 });
+
+// flyyy
 const tarjetas = document.querySelectorAll(".card-sede");
 tarjetas.forEach((tarjeta) => {
 
