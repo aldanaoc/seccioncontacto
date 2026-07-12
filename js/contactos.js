@@ -9,20 +9,20 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const validadores = { // teléfono opcional. se puede modificar
     nombre: (valor) => {
-        if (!valor.trim()) return "Ingrese su nombre, por favor";
-        if (valor.trim().length < 2) return "El nombre debe tener al menos 2 caracteres";
+        if (!valor.trim()) return "Ingrese su nombre";
+        if (valor.trim().length < 2) return "El nombre debe tener al menos 2 carácteres";
         return "";
     },
  
     apellido: (valor) => {
-        if (!valor.trim()) return "Ingrese su apellido, por favor";
-        if (valor.trim().length < 2) return "El apellido debe tener al menos 2 caracteres";
+        if (!valor.trim()) return "Ingrese su apellido";
+        if (valor.trim().length < 2) return "El apellido debe tener al menos 2 carácteres";
         return "";
     },
  
     email: (valor) => {
         if (!valor.trim())
-            return "Ingrese su email, por favor";
+            return "Ingrese su e-mail";
         if (!valor.includes("@")) {
             return "El e-mail debe contener un @."; }
         if (!emailRegex.test(valor.trim()))
@@ -40,7 +40,7 @@ const validadores = { // teléfono opcional. se puede modificar
         if (asuntoSelect.value !== "otro") return "";
         
         const texto = valor.trim();
-        if (!texto) return "Escriba su motivo de consulta";
+        if (!texto) return "Escriba el motivo de consulta";
         if (texto.length < 10) return "El motivo debe tener al menos 10 caracteres";
         return "";
     },
@@ -156,7 +156,7 @@ formulario.addEventListener('submit', async (e) => {
     };
     // mensaje para vallidar formulario
     if (!validarForm(datos)){
-        showFormMessage('Por favor corrige los errores antes de enviar', 'error');
+        showFormMessage('Por favor, corrija los errores antes de enviar', 'error');
         return;
     }
     // Disable submit button (a modificar si es necesario)
